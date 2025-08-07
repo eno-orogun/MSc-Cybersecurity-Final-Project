@@ -7,7 +7,7 @@ The project's aim is to conduct a mobile forensic analysis to identify differenc
 
 To achieve this, the project outlines several objectives. These include researching Android, APK files, and host sites to compare APKPure files with Google Play Store versions, checking for malware, data leaks, or unauthorized actions (tampering).
 
-<b>Originally Proposed Implementation</b>  
+<b><h1>Originally Proposed Implementation</h1></b>  
   
 Extensive research has been conducted on digital forensics processes, practices, techniques, and tools, with Android Studio, ADB, MobSF, JADX, and Autopsy identified as key tools for the investigation. The implementations of all associated applications were planned to be installed within a virtual environment.
 
@@ -17,7 +17,7 @@ The investigation will analyse ten applications, five identical pairs from both 
 
 The initially proposed implementation encountered some technical issues which was consuming project execution time. The original implementation involved the installation of all required applications within a Virtual Machine environment – which was successfully achieved; however, issues were discovered when it came to running the AVDs (Android Virtual Devices) on the VM environment due to poor processing speed. Within the VM environment a user activity SQLite database was successfully curated which was meant to capture the user interactions with the app to monitor the app behaviours. The file with detailed description of the VM configurations are located within the Project File, titled: VM Setup Documentation was created. A Python script was also fully created which was meant to automatically process all operations within the database (this script is provided within the “Project Files” – titled: main_project.py). The decision was then made to implement the entire project on a local machine.
 
-<b> Actual Implementation </b>  
+<h1>Actual Implementation</h1>  
 <br/>The implementation of this project required applications such Android Studio, Android Debug Bridge (ADB), JADX, and MobSF. The implementation steps taken are located on this GitHub repo titled: “Implementation Guide”. After installation of the required application for the project, the Android apps required for the project were chosen and some apps were also apps initially chosen were changed. The apps finally used on the project are: TikTok, Subway Surfers, Subway Princess Runner and Twitter.  
 
 <br/> <b>Android Virtual Devices (AVDs)<b> 
