@@ -1,4 +1,4 @@
-<h1>VM Setup Documentation</h1>h1>
+<h1>VM Setup Documentation</h1>
 A virtual machine (VM) was created using Ubuntu Desktop 22.04 with two network adapters– one set to NAT to give it internet access and the other set to Bridged Network which enables access to the physical LAN.  The VM was assigned the NAT interface (enp0s3) which has an IPv4 automatic DHCP IP Address (10.0.2.15).
 
 The following applications were then installed on the VM:
