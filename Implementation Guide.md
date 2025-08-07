@@ -12,7 +12,7 @@ The implementation involved the following steps:
 
 2.  ADB: Configuring the path for ADB in PowerShell command prompt
     for Android Studio project:
-    C:\\Users\\Eno\\AndroidSDK\\Platform-tools
+    C:\\sers\Eno\AndroidSDK\Platform-tools
 
 3.  AVDs Creation: Creating one AVD each for Google Play Store and
     APKPure apks: "GOOGLE AVD" (Pixel 8 Pro API 35 - GOOGLE AVD) and
@@ -36,7 +36,7 @@ The implementation involved the following steps:
     user activities were then generated e.g. on TikTok and Twitter,
     posted from other account users were viewed, saved, reposted and
     reacted to. While on Subway Santa Princess Runner which is a gaming
-    app -- play sessions were generated on the AVDs and changed made on
+    app - play sessions were generated on the AVDs and changed made on
     the AVDs were saved via Android Studio manager
 
 9.  ADB Pulling APKs: After the previous step above, ADB pull was
@@ -55,7 +55,7 @@ The implementation involved the following steps:
 
 11. MobSF: MobSF was activated by first running Docker Desktop and
     then the following command on windows command prompt: docker run -it
-    -p 8000:8000 -v C:\\Users\\Eno\\MobSF\\Mobile-Security-Framework-MobSF.MobSF
+    -p 8000:8000 -v C:\Users\Eno\\MobSF\Mobile-Security-Framework-MobSF.MobSF
     opensecurity/mobile-security-framework-mobsf
     
     Followed by navigating the localhost:8000 on a web browser. Once
@@ -63,7 +63,7 @@ The implementation involved the following steps:
     scan conducted on them
     
     It wasn't feasible to conduct the dynamic scan of all APKs with
-    MobSF as envisioned -- due to the MobSF's inability to detect the
+    MobSF as envisioned - due to the MobSF's inability to detect the
     running AVDs.
     
     Efforts were made to resolve the issue by setting the configuration
@@ -120,7 +120,7 @@ trial for this mobile forensic investigation project:
     within the AVDs e.g. app launch, permissions granting, interacting
     with specific features within an app on the AVDs
     
-    - static_analysis_results**: this table stores the results of JADX
+    - static_analysis_results: this table stores the results of JADX
     decompilation and static analysis of each APK on the AVDs
     
     - dynamic_analysis_results: this table stores the results of
@@ -215,7 +215,7 @@ functions:
 
 -   Purpose: This function handles user identification. It retrieves
      an existing user_id for a given username or creates a new user
-     record if the username doesn\'t already exist, ensuring unique
+     record if the username doesn't already exist, ensuring unique
      user tracking.
 
 -   Process:
@@ -225,15 +225,15 @@ functions:
     -   If found, returns the corresponding user_id.
 
     -   If not found, inserts the new username into the users table and
-        > returns the newly generated user_id.
+        returns the newly generated user_id.
 
 4. Start_avd_session(user_id): Session Tracking (Start)
 
--   Purpose: Records the beginning of a user\'s Android Virtual
-    > Device (AVD) session, which serves as a container for subsequent
-    > user actions and analysis logs.
+-   Purpose: Records the beginning of a user's Android Virtual
+    Device (AVD) session, which serves as a container for subsequent
+    user actions and analysis logs.
 
--   **Process:**
+-   Process:
 
     -   Inserts a new record into the avd_sessions table.
 
@@ -241,122 +241,106 @@ functions:
 
     -   Returns the session_id of the newly created session.
 
-**5. End_avd_session(session_id): Session Tracking (End)**
+5. End_avd_session(session_id): Session Tracking (End)
 
--   **Purpose:** To mark the completion of an AVD session, providing a
-    > clear duration for user activity.
+-   Purpose: To mark the completion of an AVD session, providing a
+    clear duration for user activity.
 
--   **Process:**
+-   Process:
 
     -   Updates the existing record in the avd_sessions table identified
-        > by session_id.
+        by session_id.
 
     -   Sets the end_time to the current timestamp.
 
-**6. Log_apk_download(user_id, package_name, file_path): APK
-Installation Logging**
+6. Log_apk_download(user_id, package_name, file_path): APK Installation Logging
 
--   **Purpose:** To track details of APK installations, including the
-    > package name and file hashes for later reference and static
-    > analysis.
+-   Purpose: To track details of APK installations, including the
+    package name and file hashes for later reference and static analysis.
 
--   **Process:**
+-   Process:
 
-    -   First, calls Calculate_files_hashes(file_path) to get MD5 and
-        > SHA256 hashes of the APK.
+    -   First, calls Calculate_files_hashes(file_path) to get MD5 and SHA256 hashes of the APK.
 
     -   Inserts a new record into the apk_downloads table.
 
-    -   Records user_id, package_name, file_hash_md5, file_hash_sha256,
-        > and the download_time.
+    -   Records user_id, package_name, file_hash_md5, file_hash_sha256, and the download_time.
 
     -   Returns the apk_id of the newly logged APK.
 
-**7. Log_user_action(session_id, action_type, action_details): User
-Activity Logging**
+7. Log_user_action(session_id, action_type, action_details): User activity Logging
 
--   **Purpose:** To log specific, detailed actions performed by a user
-    > within an active AVD session, providing a granular audit trail.
+-   Purpose: To log specific, detailed actions performed by a user within an active AVD session, providing a granular audit trail.
 
--   **Process:**
+-   Process:
 
     -   Inserts a new record into the user_actions table.
 
-    -   Records the session_id, action_type (e.g., \"app_launch\",
-        > \"button_click\", \"input_text\"), action_details (a JSON
-        > string or text describing the action), and the timestamp.
+    -   Records the session_id, action_type (e.g., "app_launch", "button_click", "input_text"), action_details 
+        (a JSON string or text describing the action), and the timestamp.
 
-**8. Log_static_analysis_results(apk_id, results_json): Static Analysis
-Logging**
+8. Log_static_analysis_results(apk_id, results_json): Static Analysis Logging
 
--   **Purpose:** To store the results obtained from static analysis
-    > tools (e.g., JADX static analysis) for a specific APK.
+-   Purpose: To store the results obtained from static analysis tools (e.g., JADX static analysis) for a specific APK.
 
--   **Process:**
+-   Process:
 
     -   Inserts a new record into the static_analysis_results table.
 
-    -   Records the apk_id, the results_json (a JSON string containing
-        > the full analysis report), and the analysis_time.
+    -   Records the apk_id, the results_json (a JSON string containing the full analysis report),
+        and the analysis_time.
 
-**9. Log_dynamic_analysis_results(apk_id, results_json): Dynamic
-Analysis Logging**
+9. Log_dynamic_analysis_results(apk_id, results_json): Dynamic Analysis Logging
 
--   **Purpose:** To store the results obtained from dynamic analysis
-    > tools (e.g., MobSF dynamic analysis) for a specific APK.
+-   Purpose: To store the results obtained from dynamic analysis tools (e.g., MobSF dynamic analysis) for 
+    a specific APK.
 
--   **Process:**
+-   Process:
 
     -   Inserts a new record into the dynamic_analysis_results table.
 
-    -   Records the apk_id, the results_json (a JSON string containing
-        > the full analysis report), and the analysis_time.
+    -   Records the apk_id, the results_json (a JSON string containing the full analysis report), and
+        the analysis_time.
 
-**10. Parse_mobsf_dynamic_json(json_report): Data Extraction from MobSF
-Reports**
+10. Parse_mobsf_dynamic_json(json_report): Data Extraction from MobSF Reports
 
--   **Purpose:** To extract and summarize key information from a raw
-    > MobSF dynamic analysis JSON report, making it easier to query and
-    > present.
+-   Purpose: To extract and summarize key information from a raw MobSF dynamic analysis JSON report, 
+    making it easier to query and present.
 
--   **Process:**
+-   Process:
 
     -   Takes the raw JSON report as input.
 
     -   Parses the JSON structure.
 
-    -   Extracts relevant fields (e.g., network traffic, API calls, file
-        > system changes, detected malware indicators).
+    -   Extracts relevant fields (e.g., network traffic, API calls, file system changes, 
+        detected malware indicators).
 
-    -   Returns a summarized dictionary or object of extracted data,
-        > which can then be stored in the analysis_data_json field in a
-        > more manageable format or used to populate specific columns if
-        > the schema were more normalized.
+    -   Returns a summarized dictionary or object of extracted data, which can then be stored in 
+        the analysis_data_json field in a more manageable format or used to populate specific columns 
+        if the schema were more normalized.
 
-**11. Run_adb_command(command): ADB Interaction**
+11. Run_adb_command(command): ADB Interaction
 
--   **Purpose:** To execute Android Debug Bridge (ADB) commands, which
-    > are essential for interacting with AVDs (e.g., installing APKs,
-    > pulling logs, running shell commands).
+-   Purpose: To execute Android Debug Bridge (ADB) commands, which are essential for interacting with AVDs 
+    (e.g., installing APKs, pulling logs, running shell commands).
 
--   **Process:**
+-   Process:
 
-    -   Uses Python\'s subprocess module to execute the given command in
-        > the shell.
+    -   Uses Python's subprocess module to execute the given command in the shell.
 
     -   Captures the standard output and standard error.
 
     -   Provides error handling for command execution failures.
 
-    -   Returns the command\'s output.
+    -   Returns the command's output.
 
-**12. Calculate_files_hashes(file_path): File Integrity Check**
+12. Calculate_files_hashes(file_path): File Integrity Check
 
--   **Purpose:** To compute cryptographic hash values (MD5 and SHA256)
-    > for a given file, primarily used for APK files to ensure integrity
-    > and unique identification.
+-   Purpose:To compute cryptographic hash values (MD5 and SHA256) for a given file, primarily used for APK 
+    files to ensure integrity and unique identification.
 
--   **Process:**
+-   Process:
 
     -   Opens the file in binary read mode.
 
@@ -364,20 +348,19 @@ Reports**
 
     -   Uses the hashlib module to update MD5 and SHA256 hash objects.
 
-    -   Returns a tuple or dictionary containing the hexadecimal
-        > representations of the MD5 and SHA256 hashes.
+    -   Returns a tuple or dictionary containing the hexadecimal representations of the MD5 and SHA256 hashes.
 
-**13. Get_apk_id_from_db(package_name): APK Identification**
+13. Get_apk_id_from_db(package_name): APK Identification
 
--   **Purpose:** To retrieve the internal apk_id from the database based
-    > on the APK\'s package_name, which is often a more convenient
-    > identifier for external tools or user input.
+-   Purpose: To retrieve the internal apk_id from the database based on the APK\'s package_name, which is often 
+    a more convenient identifier for external tools or user input.
 
--   **Process:**
+-   Process:
 
     -   Queries the apk_downloads table using the package_name.
 
     -   If found, returns the corresponding apk_id.
 
     -   If not found, returns None or raises an appropriate error.
+
 
