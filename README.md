@@ -4,4 +4,4 @@ This project is a Digital Forensics project which was conducted as the final pro
 
 Android APK file is a file format which is applied for Android application installations and distributions, and it can be acquired mainly from the Google play store at (https://play.google.com/) but sites such as APKPure (https://apkpure.com/) also provide the most common APK files that users can integrate with their device within Google’s infrastructure.
 
-This investigation project is to ascertain whether APKs from APKPUre store should equally be trusted as those from the official store due to research which provides doubts.
+This investigation project is to ascertain whether APKs from APKPure store should equally be trusted as those from the official store due to research which provides doubts.
