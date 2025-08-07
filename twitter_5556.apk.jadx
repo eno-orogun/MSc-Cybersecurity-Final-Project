@@ -1,0 +1,21 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "..\\..\\APK PULL\\emulator 5556_APKPureAVD\\twitter_5556\\twitter_5556.apk"
+  ],
+  "treeExpansions": [
+    [
+      "Resources",
+      "twitter_5556.apk"
+    ]
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [],
+  "cacheDir": "C:\\Users\\Eno\\AppData\\Local\\skylot\\jadx\\cache\\projects\\twitter_5556-198a736c060d2c5f82df92c3771c0f4e",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "pluginOptions": {}
+}

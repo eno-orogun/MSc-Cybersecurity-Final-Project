@@ -1,0 +1,21 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "..\\..\\APK PULL\\emulator 5554_GoogleAVD\\SubwayPrincess_5554\\SubwayPrincess_5554.apk"
+  ],
+  "treeExpansions": [
+    [
+      "Resources",
+      "SubwayPrincess_5554.apk"
+    ]
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [],
+  "cacheDir": "C:\\Users\\Eno\\AppData\\Local\\skylot\\jadx\\cache\\projects\\SubwayPrincess_5554-27bd5133f15df08906d71f0c93f9f3a3",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "pluginOptions": {}
+}

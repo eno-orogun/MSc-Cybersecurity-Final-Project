@@ -1,0 +1,36 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "..\\..\\APK PULL\\emulator 5554_GoogleAVD\\SubwaySurfers_5554\\SubwaySurfers_5554.apk"
+  ],
+  "treeExpansions": [
+    [
+      "Resources",
+      "SubwaySurfers_5554.apk"
+    ]
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "resource",
+      "tabPath": "AndroidManifest.xml",
+      "subPath": "",
+      "caret": 54994,
+      "view": {
+        "x": 0,
+        "y": 15441
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false
+    }
+  ],
+  "cacheDir": "C:\\Users\\Eno\\AppData\\Local\\skylot\\jadx\\cache\\projects\\SubwaySurfers_5554-e516a2eb7e6d9f1e75f1e16d0f0b3c5f",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "pluginOptions": {}
+}

@@ -1,0 +1,56 @@
+APK signature verification result:
+Signature verification succeeded
+Valid APK signature v1 found
+Signer BNDLTOOL.RSA (META-INF/BNDLTOOL.SF)
+Type: X.509
+Version: 3
+Serial number: 0x50446840
+Subject: CN=Jacob Møller, OU=Kiloo, O=Kiloo Games, L=Aarhus, ST=Jutland, C=45
+Valid from: Mon Sep 03 09:20:16 BST 2012
+Valid until: Sun Jan 05 08:20:16 GMT 3012
+Public key type: RSA
+Exponent: 65537
+Modulus size (bits): 1024
+Modulus: 90357966531001821797706513982533844337497425744796901551373285133104646475592780051474983357944780573143124279615014268012635936777421831085473316570107723575104351836003991548336676387137034721042831875575225325261838064628438332660646040853456405660957747644105651614886405592650945751928460940691085619389
+Signature type: SHA1withRSA
+Signature OID: 1.2.840.113549.1.1.5
+MD5 Fingerprint: 50 DC B8 F9 50 24 11 3F 3C 67 61 E5 43 C3 E1 85 
+SHA-1 Fingerprint: EC BE 83 97 A8 DD FA CE 5C E7 C8 C5 0F ED 44 44 02 FD 38 4E 
+SHA-256 Fingerprint: A0 32 8A 96 AC 93 BE 79 83 B5 BE C4 17 BD 2C 03 F1 29 AF 6F 8A FF 39 51 24 70 E6 6A 18 DD 96 4E 
+Valid APK signature v2 found
+Signer 1
+Type: X.509
+Version: 3
+Serial number: 0x50446840
+Subject: CN=Jacob Møller, OU=Kiloo, O=Kiloo Games, L=Aarhus, ST=Jutland, C=45
+Valid from: Mon Sep 03 09:20:16 BST 2012
+Valid until: Sun Jan 05 08:20:16 GMT 3012
+Public key type: RSA
+Exponent: 65537
+Modulus size (bits): 1024
+Modulus: 90357966531001821797706513982533844337497425744796901551373285133104646475592780051474983357944780573143124279615014268012635936777421831085473316570107723575104351836003991548336676387137034721042831875575225325261838064628438332660646040853456405660957747644105651614886405592650945751928460940691085619389
+Signature type: SHA1withRSA
+Signature OID: 1.2.840.113549.1.1.5
+MD5 Fingerprint: 50 DC B8 F9 50 24 11 3F 3C 67 61 E5 43 C3 E1 85 
+SHA-1 Fingerprint: EC BE 83 97 A8 DD FA CE 5C E7 C8 C5 0F ED 44 44 02 FD 38 4E 
+SHA-256 Fingerprint: A0 32 8A 96 AC 93 BE 79 83 B5 BE C4 17 BD 2C 03 F1 29 AF 6F 8A FF 39 51 24 70 E6 6A 18 DD 96 4E 
+Valid APK signature v3 found
+Signer 1
+Type: X.509
+Version: 3
+Serial number: 0x50446840
+Subject: CN=Jacob Møller, OU=Kiloo, O=Kiloo Games, L=Aarhus, ST=Jutland, C=45
+Valid from: Mon Sep 03 09:20:16 BST 2012
+Valid until: Sun Jan 05 08:20:16 GMT 3012
+Public key type: RSA
+Exponent: 65537
+Modulus size (bits): 1024
+Modulus: 90357966531001821797706513982533844337497425744796901551373285133104646475592780051474983357944780573143124279615014268012635936777421831085473316570107723575104351836003991548336676387137034721042831875575225325261838064628438332660646040853456405660957747644105651614886405592650945751928460940691085619389
+Signature type: SHA1withRSA
+Signature OID: 1.2.840.113549.1.1.5
+MD5 Fingerprint: 50 DC B8 F9 50 24 11 3F 3C 67 61 E5 43 C3 E1 85 
+SHA-1 Fingerprint: EC BE 83 97 A8 DD FA CE 5C E7 C8 C5 0F ED 44 44 02 FD 38 4E 
+SHA-256 Fingerprint: A0 32 8A 96 AC 93 BE 79 83 B5 BE C4 17 BD 2C 03 F1 29 AF 6F 8A FF 39 51 24 70 E6 6A 18 DD 96 4E 
+Warnings
+Files that are not protected by APK signature v1. Unauthorized modifications to these entries can only be detected by APK signature v2 and higher.
+META-INF/androidx.activity_activity-compose.version META-INF/androidx.activity_activity-ktx.version META-INF/androidx.activity_activity.version META-INF/androidx.annotation_annotation-experimental.version META-INF/androidx.appcompat_appcompat-resources.version META-INF/androidx.appcompat_appcompat.version META-INF/androidx.arch.core_core-runtime.version META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version META-INF/androidx.autofill_autofill.version META-INF/androidx.browser_browser.version META-INF/androidx.cardview_cardview.version META-INF/androidx.compose.animation_animation-core.version META-INF/androidx.compose.animation_animation.version META-INF/androidx.compose.foundation_foundation-layout.version META-INF/androidx.compose.foundation_foundation.version META-INF/androidx.compose.material_material-icons-core.version META-INF/androidx.compose.material_material-ripple.version META-INF/androidx.compose.material_material.version META-INF/androidx.compose.runtime_runtime-saveable.version META-INF/androidx.compose.runtime_runtime.version META-INF/androidx.compose.ui_ui-geometry.version META-INF/androidx.compose.ui_ui-graphics.version META-INF/androidx.compose.ui_ui-text.version META-INF/androidx.compose.ui_ui-unit.version META-INF/androidx.compose.ui_ui-util.version META-INF/androidx.compose.ui_ui.version META-INF/androidx.coordinatorlayout_coordinatorlayout.version META-INF/androidx.core_core-ktx.version META-INF/androidx.core_core.version META-INF/androidx.cursoradapter_cursoradapter.version META-INF/androidx.customview_customview-poolingcontainer.version META-INF/androidx.customview_customview.version META-INF/androidx.datastore_datastore-core.version META-INF/androidx.datastore_datastore-preferences.version META-INF/androidx.datastore_datastore.version META-INF/androidx.documentfile_documentfile.version META-INF/androidx.drawerlayout_drawerlayout.version META-INF/androidx.emoji2_emoji2-views-helper.version META-INF/androidx.emoji2_emoji2.version META-INF/androidx.exifinterface_exifinterface.version META-INF/androidx.fragment_fragment.version META-INF/androidx.interpolator_interpolator.version META-INF/androidx.legacy_legacy-support-core-ui.version META-INF/androidx.legacy_legacy-support-core-utils.version META-INF/androidx.legacy_legacy-support-v4.version META-INF/androidx.lifecycle_lifecycle-livedata-core.version META-INF/androidx.lifecycle_lifecycle-livedata.version META-INF/androidx.lifecycle_lifecycle-process.version META-INF/androidx.lifecycle_lifecycle-runtime-compose.version META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version META-INF/androidx.lifecycle_lifecycle-runtime.version META-INF/androidx.lifecycle_lifecycle-service.version META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version META-INF/androidx.lifecycle_lifecycle-viewmodel.version META-INF/androidx.loader_loader.version META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version META-INF/androidx.media_media.version META-INF/androidx.preference_preference.version META-INF/androidx.print_print.version META-INF/androidx.privacysandbox.ads_ads-adservices-java.version META-INF/androidx.privacysandbox.ads_ads-adservices.version META-INF/androidx.profileinstaller_profileinstaller.version META-INF/androidx.recyclerview_recyclerview.version META-INF/androidx.room_room-ktx.version META-INF/androidx.room_room-runtime.version META-INF/androidx.savedstate_savedstate-ktx.version META-INF/androidx.savedstate_savedstate.version META-INF/androidx.slidingpanelayout_slidingpanelayout.version META-INF/androidx.sqlite_sqlite-framework.version META-INF/androidx.sqlite_sqlite.version META-INF/androidx.startup_startup-runtime.version META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version META-INF/androidx.tracing_tracing.version META-INF/androidx.vectordrawable_vectordrawable-animated.version META-INF/androidx.vectordrawable_vectordrawable.version META-INF/androidx.versionedparcelable_versionedparcelable.version META-INF/androidx.viewpager_viewpager.version META-INF/androidx.webkit_webkit.version META-INF/androidx.work_work-runtime-ktx.version META-INF/androidx.work_work-runtime.version META-INF/com/android/build/gradle/app-metadata.properties META-INF/com/ironsource/adapters/bidmachineadapter/verification.properties META-INF/com/ironsource/adapters/fyberadapter/verification.properties META-INF/com/ironsource/adapters/inmobiadapter/verification.properties META-INF/com/ironsource/adapters/molocoadapter/verification.properties META-INF/com/unity3d/ads-mediation/adquality-sdk/verification.properties META-INF/com.android.games.engine.build_fingerprint META-INF/kotlinx_coroutines_android.version META-INF/kotlinx_coroutines_core.version META-INF/kotlinx_coroutines_jdk8.version META-INF/kotlinx_coroutines_play_services.version META-INF/kotlinx_coroutines_slf4j.version META-INF/services/kotlinx.coroutines.k0 META-INF/services/u8.c META-INF/services/va.u 
