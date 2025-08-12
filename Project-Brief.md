@@ -27,7 +27,8 @@ The Android Virtual Devices (AVDs) were created in Android Studio. Two different
 <h1>Android Debug Bridge (ADB) & JADX</h1>  
 ADB devices command was used on windows command prompt to list the AVDs for the project - the AVDs were required to be running for ADB to list them. The screenshot that evidences these actions can be found within the Project Files on this GitHub repository, titled “AVDs on Emulator”. Each AVD were further listed individually in command prompt within the Project Files with the titles: “Listing Google AVD” and “Listing APKPure AVD”.  
 <br/>After generating some user activities on the AVDs, the app interaction contents were transferred to JADX via ADB pull commands. APK files for each app on each AVD were extracted to JADX for static analysis, assessing them for permissions, data leaks and tampering. Folders were created on the machine being used for the project, creating individual files for each AVD’s APK files using the names of the emulators and then the names of each app. For example, within emulator 5554_GoogleAVD folder resides the APK files for Google Play Store’s APK files pulled from the AVD – then within emulator 5554_GoogleAVD folder resides e.g. SubwayPrincess_5554, SubwaySurfers_5554 and so on. These subfolders are the locations the APK files extracted from the AVDs are stored which were then used in the upload to JADX for static analysis.  
-<br/>The screenshot which evidence the ADB pull of the APKs for each app for the AVDs can be located within the Project Files on the GitHub repo, titled:  
+<br/>
+The screenshot which evidence the ADB pull of the APKs for each app for the AVDs can be located within the Project Files on the GitHub repo, titled:  
 
 - ADB pull for twitter APK for Google AVD
 - ADB pull for twitter APK for APKPure AVD
@@ -37,9 +38,12 @@ ADB devices command was used on windows command prompt to list the AVDs for the 
 - ADB pull for Subway Santa Princess Runner APK for Google AVD
 - ADB pull for Subway Santa Princess Runner APK for APKPure AVD
 
-ADB pull for TikTok APK for APKPure AVD failed to pull data and the TikTok APKs were unable to be analysed and compared due to lack of time to investigate and resolve the issues with pulling this data._  
-<br/>_On JADX six separate projects were created to enable distinctions between the files for each AVD and the project files are saved within the Project Files repo, for example SubwayPrincess_5554.apk.jadx_  
-<br/>_The APK Signatures for each JADX project were extracted, saved as .txt files uploaded to VirusTotal and then analysed and compared, checking for any evidence of tampering in the APKPure’s APK signatures compared with Google Play Store’s APK signatures. The signatures are saved within the Project Files using the names of the APK and AVD, for example SubwayPrincess_Google_APK_Signature.  
+ADB pull for TikTok APK for APKPure AVD failed to pull data and the TikTok APKs were unable to be analysed and compared due to lack of time to investigate and resolve the issues with pulling this data.  
+<br/>
+On JADX six separate projects were created to enable distinctions between the files for each AVD and the project files are saved within the Project Files repo, for example SubwayPrincess_5554.apk.jadx  
+<br/>
+The APK Signatures for each JADX project were extracted, saved as .txt files uploaded to VirusTotal and then analysed and compared, checking for any evidence of tampering in the APKPure’s APK signatures compared with Google Play Store’s APK signatures. The signatures are saved within the Project Files using the names of the APK and AVD, for example SubwayPrincess_Google_APK_Signature.  
+
 The AndroidManifest.xml file for each JADX project were extracted and manually analysed checking for data leaks and unusual/elevated permissions and the files were saved within the Project Files such as SubwayPrincess_5554_Google_AndroidManifest – for example, the AndroidManifest file belonging the Subway Princess Runner APK for the Google Play Store AVD.
 
 <br/>JADX was configured to 25GB memory space for it handle the APKs files for both AVDs, this configuration was made within JADX’s lib file located where the JADX executable file was stored using the code: java -Xms512m -Xmx25g -jar jadx-1.5.1-all.jar.
