@@ -75,8 +75,10 @@ Then opening a web browser and navigating to http://localhost:9999
 SQLite was installed with the command:
 
 sudo apt install sqlite3
+
 The SQLite browser was then installed using the command:
 sudo apt install sqlitebrowser
+
 The application was started using the command:
 sqlitebrowser
 
